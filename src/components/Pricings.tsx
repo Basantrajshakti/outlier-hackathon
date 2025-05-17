@@ -5,7 +5,7 @@ const Pricings = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section>
+    <section className="py-12">
       <h1 className="text-center leading-snug">Choose your pricing</h1>
       <p className="text-para mt-3 text-center">
         Find the perfect plan to fit your business needs. We provide flexible

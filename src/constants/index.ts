@@ -42,3 +42,5 @@ export const pricings = [
     ],
   },
 ];
+
+export const navItems = ["Home", "Pricing", "Products", "About Us"];

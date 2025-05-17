@@ -1,18 +1,31 @@
+import { navItems } from "../constants";
+import Button from "../UI/Button/Button";
+
+const navItemClasses =
+  "opacity-90 transition-opacity duration-300 group-hover:opacity-50 hover:!opacity-100 px-1 mx-2";
+
 const Header = () => {
   return (
-    <header className="sticky top-0 flex w-full justify-between px-8 py-6 bg-transparent">
-      <div>
-        <sup>by</sup> Basantraj
+    <header className="sticky top-0 flex w-full items-center justify-between bg-transparent px-8 py-5">
+      <a
+        href="https://www.linkedin.com/in/basantrajshakti/"
+        className="relative font-bold"
+      >
+        <span className="absolute top-0.5 inline-block text-[10px]">by</span>
+        <span className="ml-3.5 text-xl text-gray-100">Basantraj</span>
+      </a>
+
+      <div className="group hidden text-sm sm:block">
+        {navItems.map((nav, key) => {
+          return (
+            <a href="#" key={key} className={navItemClasses}>
+              {nav}
+            </a>
+          );
+        })}
       </div>
 
-      <ul className="flex list-none gap-6">
-        <li>Home</li>
-        <li>Pricing</li>
-        <li>Products</li>
-        <li>About Us</li>
-      </ul>
-
-      <button>Contact</button>
+      <Button text="Contact" clickHandler={() => {}} active />
     </header>
   );
 };
