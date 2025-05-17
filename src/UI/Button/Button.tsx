@@ -2,7 +2,7 @@ import Stars from "../Stars";
 import "./styles.css";
 
 type ButtonProps = {
-  clickHandler: () => void;
+  // clickHandler?: () => void;
   text: string;
   extraClasses?: string;
   active?: boolean;
@@ -11,7 +11,7 @@ type ButtonProps = {
 };
 
 const Button = ({
-  clickHandler,
+  // clickHandler,
   text,
   extraClasses,
   active,
@@ -20,8 +20,11 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      onClick={clickHandler}
-      className={`button text-sm ${active ? "active " : ""}` + extraClasses}
+      // onClick={clickHandler}
+      className={
+        `button flex justify-center text-base ${active ? "active " : ""}` +
+        extraClasses
+      }
     >
       {showPathAnim && <div className="anim_borders"></div>}
       {showStars && <Stars />}

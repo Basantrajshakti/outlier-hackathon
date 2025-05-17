@@ -1,0 +1,122 @@
+/* Cards */
+.cards {
+  position: relative;
+}
+
+.cards__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.cards__card {
+  background: #191734;
+  background: linear-gradient(to bottom, #191734, #141528);
+  max-width: 400px;
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover gradients */
+.card {
+  --flow-space: 0.5em;
+  --hsl: var(--hue), var(--saturation), var(--lightness);
+  padding: 2.5rem 2rem;
+  gap: 1.25em;
+  color: #eceff1;
+  background-color: #2b2b2b;
+  border: 1px solid #eceff133;
+  border-radius: 1rem;
+}
+
+.card:nth-child(1) {
+  /* --hue: 165;
+  --saturation: 82.26%;
+  --lightness: 51.37%; */
+  --hue: 600;
+  --saturation: 100.9%;
+  --lightness: 80%;
+}
+
+.card:nth-child(2) {
+  --hue: 600;
+  --saturation: 100.9%;
+  --lightness: 65%;
+}
+
+.card:nth-child(3) {
+  /* --hue: 338.69;
+  --saturation: 100%;
+  --lightness: 48.04%; */
+  --hue: 600;
+  --saturation: 100.9%;
+  --lightness: 80%;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: var(--opacity, 0);
+  -webkit-mask: radial-gradient(
+    25rem 25rem at var(--x) var(--y),
+    #000 1%,
+    transparent 50%
+  );
+  mask: radial-gradient(
+    25rem 25rem at var(--x) var(--y),
+    #000 1%,
+    transparent 50%
+  );
+  transition: 400ms mask ease;
+  will-change: mask;
+}
+
+.overlay .card {
+  background-color: hsla(var(--hsl), 0.15);
+  border-color: hsla(var(--hsl), 1);
+  box-shadow: 0 0 0 1px inset hsl(var(--hsl));
+}
+
+/* Special gradient for recommended card */
+.recommended-gradient {
+  background: #6437fe;
+  background: radial-gradient(
+    circle,
+    rgba(100, 55, 254, 0.55) 0%,
+    rgba(255, 255, 255, 0) 82%
+  );
+}
+
+/* Mobile view */
+@media (max-width: 1024px) {
+  .cards__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gradient-shadow {
+  border: 2px solid rgba(100, 55, 254, 0.6);
+}
+
+.gradient-shadow-light {
+  border: 2px solid rgba(100, 55, 254, 0.2);
+}
+
+.gradient-shadow,
+.gradient-shadow-light {
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    transparent 60%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    transparent 60%,
+    transparent 100%
+  );
+}

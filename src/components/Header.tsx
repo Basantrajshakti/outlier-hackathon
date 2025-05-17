@@ -10,6 +10,7 @@ const Header = () => {
       <a
         href="https://www.linkedin.com/in/basantrajshakti/"
         className="relative font-bold"
+        target="_blank"
       >
         <span className="absolute top-0.5 inline-block text-[10px]">by</span>
         <span className="ml-3.5 text-xl text-gray-100">Basantraj</span>
@@ -25,7 +26,7 @@ const Header = () => {
         })}
       </div>
 
-      <Button text="Contact" clickHandler={() => {}} active />
+      <Button text="Contact" active />
     </header>
   );
 };
