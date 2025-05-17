@@ -6,7 +6,7 @@ const navItemClasses =
 
 const Header = () => {
   return (
-    <header className="sticky top-0 flex w-full items-center justify-between bg-transparent px-8 py-5">
+    <header className="sticky top-0 container flex w-full items-center justify-between bg-transparent px-8 py-5">
       <a
         href="https://www.linkedin.com/in/basantrajshakti/"
         className="relative font-bold"
