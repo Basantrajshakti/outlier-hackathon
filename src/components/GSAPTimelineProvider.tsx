@@ -1,6 +1,6 @@
 import { createContext } from "preact";
 import { useContext, useState } from "preact/hooks";
-import gsap from "gsap";
+// import gsap from "gsap";
 
 interface GSAPContextType {
   killTimeline: () => void;
