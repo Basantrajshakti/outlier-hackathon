@@ -9,9 +9,9 @@ const AnimateOnLoad = () => {
     const elements = document.querySelectorAll(".appear-onload");
     if (!elements.length) return;
 
-    const animation = gsap.fromTo(
+    const animation = gsap.to(
       elements,
-      { opacity: 0, y: 30 },
+      // { opacity: 0, y: 30 },
       {
         opacity: 1,
         y: 0,
