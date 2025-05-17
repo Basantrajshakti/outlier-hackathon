@@ -1,16 +1,49 @@
+/* Manrope */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  font-family: Manrope, serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* color-scheme: light dark; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  @apply mx-auto px-4 lg:max-w-[96%] xl:max-w-[90%] 2xl:max-w-[1440px];
+  /* max-height: min(100vh); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply leading-snug;
+  font-weight: 600;
+}
+
+h1,
+h2 {
+  @apply text-2xl md:text-3xl lg:text-[36px] xl:text-[38px] 2xl:text-[40px];
+}
+h3 {
+  @apply text-2xl md:text-3xl lg:text-[33px] xl:text-[35px] 2xl:text-[37px];
+}
+h4 {
+  @apply text-2xl md:text-3xl lg:text-[30px] xl:text-[32px] 2xl:text-[34px];
+}
+h5 {
+  @apply text-2xl md:text-3xl lg:text-[27px] xl:text-[29px] 2xl:text-[31px];
+}
+h6 {
+  @apply text-2xl md:text-3xl lg:text-[24px] xl:text-[26px] 2xl:text-[28px];
 }
