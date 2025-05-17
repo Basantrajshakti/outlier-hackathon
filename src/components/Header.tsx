@@ -6,17 +6,17 @@ const navItemClasses =
 
 const Header = () => {
   return (
-    <header className="sticky top-0 container flex w-full items-center justify-between bg-transparent px-8 py-5">
+    <header className="sticky top-0 z-100 container flex w-full items-center justify-between bg-transparent px-8 py-5 backdrop-blur-2xl">
       <a
         href="https://www.linkedin.com/in/basantrajshakti/"
-        className="relative font-bold"
+        className="appear-onload relative font-bold"
         target="_blank"
       >
         <span className="absolute top-0.5 inline-block text-[10px]">by</span>
         <span className="ml-3.5 text-xl text-gray-100">Basantraj</span>
       </a>
 
-      <div className="group hidden text-sm sm:block">
+      <div className="appear-onload group hidden text-sm sm:block">
         {navItems.map((nav, key) => {
           return (
             <a href="#" key={key} className={navItemClasses}>
@@ -26,7 +26,9 @@ const Header = () => {
         })}
       </div>
 
-      <Button text="Contact" active />
+      <div className="appear-onload">
+        <Button text="Contact" active />
+      </div>
     </header>
   );
 };
