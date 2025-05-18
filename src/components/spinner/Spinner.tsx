@@ -2,11 +2,15 @@ import { useEffect } from "preact/hooks";
 import "./styles.css";
 import { loadFont } from "../../utils/loadFonts";
 
+let fontsFetched = false;
+
 const Spinner = () => {
   useEffect(() => {
+    if (fontsFetched) return;
+
     // When loader is complete
     const loadFontsAfterLoader = async () => {
-      Promise.all([
+      await Promise.all([
         loadFont("Manrope", "/fonts/Manrope-Regular.ttf", 400),
         loadFont("Manrope", "/fonts/Manrope-SemiBold.ttf", 600),
         loadFont("Manrope", "/fonts/Manrope-Bold.ttf", 700),
@@ -15,6 +19,7 @@ const Spinner = () => {
     };
 
     loadFontsAfterLoader();
+    fontsFetched = true;
   }, []);
 
   return (

@@ -1,0 +1,33 @@
+.bg-shaded-boxes {
+  opacity: 0.3;
+  z-index: -1;
+
+  background:
+    radial-gradient(circle, var(--main-bg-color) 0%, transparent 95%),
+    linear-gradient(var(--pattern-color) 1px, transparent 1px),
+    linear-gradient(to right, var(--pattern-color) 1px, transparent 1px);
+  background-size:
+    cover,
+    15px 15px,
+    15px 15px;
+  background-position:
+    center center,
+    center center,
+    center center;
+
+  mask-image: radial-gradient(circle, black 0%, transparent 80%);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 35%,
+    rgba(156, 158, 151, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* For other browsers */
+  background-clip: text;
+  color: transparent;
+}

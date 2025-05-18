@@ -33,6 +33,10 @@ const PricingCards = ({ isMonthly }: { isMonthly: boolean }) => {
 
     if (!cardsContainer || !overlay) return;
 
+    setTimeout(() => {
+      overlay.style.visibility = "visible";
+    }, 2000);
+
     const applyOverlayMask = (e: PointerEvent) => {
       if (window.innerWidth < 1024) {
         overlay.style.opacity = "0";
@@ -43,8 +47,8 @@ const PricingCards = ({ isMonthly }: { isMonthly: boolean }) => {
       const x = e.pageX - cardsContainer.offsetLeft;
       const y = e.pageY - cardsContainer.offsetTop;
       overlay.style.setProperty("--opacity", "1");
-      overlay.style.setProperty("--x", `${x}px`);
-      overlay.style.setProperty("--y", `${y}px`);
+      overlay.style.setProperty("--x", `${x - 150}px`);
+      overlay.style.setProperty("--y", `${y - 80}px`);
     };
 
     const observer = new ResizeObserver((entries) => {
@@ -98,9 +102,9 @@ const PricingCards = ({ isMonthly }: { isMonthly: boolean }) => {
         />
       ))}
       <div
-        className="overlay cards__container hidden lg:block"
+        className="overlay cards__container invisible hidden lg:block"
         ref={overlayRef}
-      ></div>
+      />
     </div>
   );
 };

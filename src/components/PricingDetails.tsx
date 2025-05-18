@@ -6,7 +6,7 @@ const Pricings = () => {
   const [isMonthly, setIsMonthly] = useState(false);
 
   return (
-    <section className="container min-h-screen pt-10 pb-20">
+    <section className="relative container min-h-screen pt-10 pb-20">
       <h1 className="appear-onload gradient-text text-center leading-snug font-bold">
         Choose your pricing
       </h1>
@@ -18,6 +18,10 @@ const Pricings = () => {
       <ButtonSwitch isMonthly={isMonthly} setIsMonthly={setIsMonthly} />
 
       <PricingCards isMonthly={isMonthly} />
+
+      <div
+        className={"bg-shaded-boxes absolute -top-1/2 left-0 h-full w-full"}
+      />
     </section>
   );
 };

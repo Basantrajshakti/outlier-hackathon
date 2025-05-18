@@ -1,5 +1,4 @@
-import { Suspense, lazy } from "preact/compat";
-import Spinner from "./components/spinner/Spinner";
+import { lazy } from "preact/compat";
 
 const AnimateOnLoad = lazy(() => import("./components/AnimateOnLoad"));
 const GSAPTimelineProvider = lazy(
@@ -8,9 +7,12 @@ const GSAPTimelineProvider = lazy(
 const Header = lazy(() => import("./components/Header"));
 const Pricings = lazy(() => import("./components/PricingDetails"));
 
+import "./gradients.css";
+import "./app.css";
+
 export function App() {
   return (
-    <Suspense fallback={<Spinner />}>
+    <>
       <GSAPTimelineProvider>
         <AnimateOnLoad />
         <Header />
@@ -18,6 +20,6 @@ export function App() {
           <Pricings />
         </main>
       </GSAPTimelineProvider>
-    </Suspense>
+    </>
   );
 }
