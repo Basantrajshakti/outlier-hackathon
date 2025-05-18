@@ -6,14 +6,14 @@ const navItemClasses =
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-100 container flex w-full items-center justify-between bg-transparent px-8 py-5 backdrop-blur-2xl">
+    <header className="sticky top-0 z-100 container flex items-center justify-between bg-transparent px-8 py-2 backdrop-blur-2xl md:py-5">
       <a
         href="https://www.linkedin.com/in/basantrajshakti/"
-        className="appear-onload relative font-bold"
+        className="appear-onload relative scale-[0.8] font-bold md:scale-100"
         target="_blank"
       >
         <span className="absolute top-0.5 inline-block text-[10px]">by</span>
-        <span className="ml-3.5 text-xl text-gray-100">Basantraj</span>
+        <span className="ml-3.5 text-xl text-gray-100">Basantraj Shakti</span>
       </a>
 
       <div className="appear-onload group hidden text-sm sm:block">
@@ -26,7 +26,7 @@ const Header = () => {
         })}
       </div>
 
-      <div className="appear-onload">
+      <div className="appear-onload scale-[0.8] md:scale-100">
         <Button text="Contact" active />
       </div>
     </header>
