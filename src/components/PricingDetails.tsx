@@ -21,6 +21,7 @@ const Pricings = () => {
 
       <div
         className={"bg-shaded-boxes absolute -top-1/2 left-0 h-full w-full"}
+        role="presentation"
       />
     </section>
   );

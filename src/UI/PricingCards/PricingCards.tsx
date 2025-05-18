@@ -118,10 +118,14 @@ const PricingCard = ({ card, isMonthly, index, setRef }: PricingCardProps) => {
       className={`appear-onload cards__card card rounded-2xl ${card.recommended ? "lg:mb-16" : "lg:mt-16"}`}
     >
       <div
+        role="presentation"
         className={`absolute top-0 left-0 h-full w-full rounded-2xl ${card.recommended ? "gradient-shadow" : "gradient-shadow-light"}`}
       />
       {card.recommended && (
-        <div className="appear-onload recommended-gradient absolute -top-[60%] left-1/2 h-full w-full -translate-x-1/2" />
+        <div
+          role="presentation"
+          className="appear-onload recommended-gradient absolute -top-[60%] left-1/2 h-full w-full -translate-x-1/2"
+        />
       )}
       {/* Headings */}
       <div className="mb-3 flex items-center justify-between">

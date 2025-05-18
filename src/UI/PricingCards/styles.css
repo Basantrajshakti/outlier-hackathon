@@ -10,8 +10,6 @@
 }
 
 .cards__card {
-  background: #191734;
-  background: linear-gradient(to bottom, #191734, #141528);
   max-width: 400px;
   margin-inline: auto;
   position: relative;
@@ -31,9 +29,6 @@
 }
 
 .card:nth-child(1) {
-  /* --hue: 165;
-  --saturation: 82.26%;
-  --lightness: 51.37%; */
   --hue: 600;
   --saturation: 100.9%;
   --lightness: 80%;
@@ -46,9 +41,6 @@
 }
 
 .card:nth-child(3) {
-  /* --hue: 338.69;
-  --saturation: 100%;
-  --lightness: 48.04%; */
   --hue: 600;
   --saturation: 100.9%;
   --lightness: 80%;
@@ -62,12 +54,12 @@
   opacity: var(--opacity, 0);
   -webkit-mask: radial-gradient(
     20rem 20rem at var(--x) var(--y),
-    #000 1%,
+    black 1%,
     transparent 50%
   );
   mask: radial-gradient(
     20rem 20rem at var(--x) var(--y),
-    #000 1%,
+    black 1%,
     transparent 50%
   );
   transition: 400ms mask ease;
@@ -85,8 +77,8 @@
   background: transparent;
   background: radial-gradient(
     circle,
-    rgba(100, 55, 254, 0.55) 0%,
-    rgba(255, 255, 255, 0) 82%
+    rgba(var(--purple-shade), 0.55) 0%,
+    rgba(var(--white-shade), 0) 82%
   );
 }
 
@@ -95,28 +87,4 @@
   .cards__container {
     grid-template-columns: 1fr;
   }
-}
-
-.gradient-shadow {
-  border: 2px solid rgba(100, 55, 254, 0.6);
-}
-
-.gradient-shadow-light {
-  border: 2px solid rgba(100, 55, 254, 0.2);
-}
-
-.gradient-shadow,
-.gradient-shadow-light {
-  mask-image: linear-gradient(
-    to bottom,
-    black 0%,
-    transparent 60%,
-    transparent 100%
-  );
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    black 0%,
-    transparent 60%,
-    transparent 100%
-  );
 }

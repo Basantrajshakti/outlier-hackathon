@@ -21,7 +21,7 @@
 .gradient-text {
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 1) 35%,
+    rgba(var(--white-shade), 1) 35%,
     rgba(156, 158, 151, 1) 100%
   );
   -webkit-background-clip: text;
@@ -30,4 +30,33 @@
   /* For other browsers */
   background-clip: text;
   color: transparent;
+}
+
+.gradient-shadow {
+  border: 2px solid rgba(var(--purple-shade), 0.6);
+}
+
+.gradient-shadow-light {
+  border: 2px solid rgba(var(--purple-shade), 0.2);
+}
+
+.gradient-shadow,
+.gradient-shadow-light {
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    transparent 60%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    transparent 60%,
+    transparent 100%
+  );
+}
+
+.cards__card {
+  background: #191734;
+  background: linear-gradient(to bottom, #191734, #141528);
 }
