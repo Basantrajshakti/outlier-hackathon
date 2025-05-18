@@ -1,11 +1,6 @@
----
+# 🚀 Animated Pricing App
 
-## 📘 README.md
-
-```md
-# 🚀 Smooth Pricing App
-
-A modern, performant front-end app built with **Preact**, **Vite**, and **TypeScript**, showcasing animated pricing cards, local font handling, GSAP transitions, and reusable UI components.
+#### A modern, performant front-end app built with **Preact**, **Vite**, and **TypeScript**, showcasing animated pricing cards, local font handling, GSAP transitions, and reusable UI components.
 
 ---
 
