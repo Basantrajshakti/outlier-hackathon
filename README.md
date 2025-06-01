@@ -6,13 +6,9 @@
 
 ![UI Preview](./public/ui.webp)
 
-## UX Demo
+## Website link
 
-<video src="https://outlier-hackathon-eight.vercel.app/ux.mp4" width="100%"></video>
-
----
-
-https://outlier-hackathon-eight.vercel.app/ux.mp4
+https://outlier-hackathon-eight.vercel.app/
 
 ---
 
