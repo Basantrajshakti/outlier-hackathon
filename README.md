@@ -8,21 +8,10 @@
 
 ## UX Demo
 
-<!-- <video src="./public/ux.mp4" controls width="600"></video> -->
+https://github.com/Basantrajshakti/outlier-hackathon/raw/refs/heads/main/public/ux.mp4
 
-/public/ux.mp4
-
-test2 :
-
-./public/ux.mp4
-
-test3:
-
-https://github.com/Basantrajshakti/outlier-hackathon/blob/main/public/ux.mp4
-
-test 4:
-
-https://user-images.githubusercontent.com/6877923/115474571-03c75800-a23e-11eb-8096-8973aad5fa9f.mp4
+<!-- Direct link from repo doesn't work -->
+<!-- https://github.com/Basantrajshakti/outlier-hackathon/blob/main/public/ux.mp4 -->
 
 ---
 
