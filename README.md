@@ -8,7 +8,11 @@
 
 ## UX Demo
 
-<video src="https://outlier-hackathon-eight.vercel.app/ux.mp4" controls width="600"></video>
+<video src="https://outlier-hackathon-eight.vercel.app/ux.mp4" width="100%"></video>
+
+---
+
+https://outlier-hackathon-eight.vercel.app/ux.mp4
 
 ---
 
