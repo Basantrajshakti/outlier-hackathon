@@ -8,10 +8,7 @@
 
 ## UX Demo
 
-https://outlier-hackathon-eight.vercel.app/ux.mp4
-
-<!-- Direct link from repo doesn't work -->
-<!-- https://github.com/Basantrajshakti/outlier-hackathon/blob/main/public/ux.mp4 -->
+<video src="https://outlier-hackathon-eight.vercel.app/ux.mp4" controls width="600"></video>
 
 ---
 
