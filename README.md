@@ -2,6 +2,14 @@
 
 #### A modern, performant front-end app built with **Preact**, **Vite**, and **TypeScript**, showcasing animated pricing cards, local font handling, GSAP transitions, and reusable UI components.
 
+## UI Preview
+
+![UI Preview](./public/ui.webp)
+
+## UX Demo
+
+<video src="./public/ux.mp4" controls width="600"></video>
+
 ---
 
 ## 🗂 Project Structure
