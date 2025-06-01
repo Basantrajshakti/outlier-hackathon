@@ -8,7 +8,7 @@
 
 ## UX Demo
 
-https://github.com/Basantrajshakti/outlier-hackathon/raw/refs/heads/main/public/ux.mp4
+https://outlier-hackathon-eight.vercel.app/ux.mp4
 
 <!-- Direct link from repo doesn't work -->
 <!-- https://github.com/Basantrajshakti/outlier-hackathon/blob/main/public/ux.mp4 -->
