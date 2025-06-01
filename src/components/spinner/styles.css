@@ -3,7 +3,7 @@
   --light-purple: #6437fe;
 }
 
-body {
+.spinner {
   display: flex;
   justify-content: center;
   align-items: center;

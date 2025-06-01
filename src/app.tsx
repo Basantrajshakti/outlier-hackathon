@@ -16,7 +16,7 @@ export function App() {
       <GSAPTimelineProvider>
         <AnimateOnLoad />
         <Header />
-        <main>
+        <main className={"relative"}>
           <Pricings />
         </main>
       </GSAPTimelineProvider>
